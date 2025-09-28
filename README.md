@@ -1,5 +1,7 @@
 ## AI Angular Code Chat
 
+<img width="250" height="150" alt="Google_Gemini_logo svg" src="https://github.com/user-attachments/assets/1c2d1ced-baea-41b0-8263-63e5cb6d0c83" /> 
+
 An AI‑powered code assistant for your Angular projects. Ask natural‑language questions about your own codebase; the app retrieves the most relevant code snippets (RAG) and lets Gemini answer with your context.
 
 - Frontend: Angular v18+ (standalone) + Tailwind CSS
