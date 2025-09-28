@@ -28,14 +28,14 @@ This is Retrieval‑Augmented Generation (RAG) for Angular.
 - Calls Gemini `text-embedding-004` for each chunk → numeric vector
 - Writes `backend/data/embeddings.json` with `{ file, text, embedding }`
 
-1) Backend 
+2) Backend 
 - `/ask` receives `{ question }`
 - Embeds the question using `text-embedding-004`
 - Cosine similarity vs. stored chunk vectors → pick top K (3)
 - Sends question + top chunks to `gemini-2.5-flash`
 - Returns `{ answer }`
 
-1) Frontend
+3) Frontend
 - Renders chat UI, sends questions to `/ask`, displays answers
 
 
