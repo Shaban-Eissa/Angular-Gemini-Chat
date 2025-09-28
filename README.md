@@ -6,6 +6,7 @@ An AI‑powered code assistant for your Angular projects. Ask natural‑language
 - Backend: Node.js (Express) + Gemini (Google AI) for embeddings and generation
 - Ingestion: one‑time script that embeds your Angular source into `embeddings.json`
 
+<img style="width:100%; height:auto" alt="localhost_4200_" src="https://github.com/user-attachments/assets/09f64a0d-45bb-41b0-ba48-11c4187a8e92" />
 
 ### Why this project
 
@@ -27,14 +28,14 @@ This is Retrieval‑Augmented Generation (RAG) for Angular.
 - Calls Gemini `text-embedding-004` for each chunk → numeric vector
 - Writes `backend/data/embeddings.json` with `{ file, text, embedding }`
 
-1) Backend 
+2) Backend 
 - `/ask` receives `{ question }`
 - Embeds the question using `text-embedding-004`
 - Cosine similarity vs. stored chunk vectors → pick top K (3)
 - Sends question + top chunks to `gemini-2.5-flash`
 - Returns `{ answer }`
 
-1) Frontend
+3) Frontend
 - Renders chat UI, sends questions to `/ask`, displays answers
 
 
