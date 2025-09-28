@@ -6,6 +6,7 @@ An AI‑powered code assistant for your Angular projects. Ask natural‑language
 - Backend: Node.js (Express) + Gemini (Google AI) for embeddings and generation
 - Ingestion: one‑time script that embeds your Angular source into `embeddings.json`
 
+<img style="width:100%; height:auto" alt="localhost_4200_" src="https://github.com/user-attachments/assets/09f64a0d-45bb-41b0-ba48-11c4187a8e92" />
 
 ### Why this project
 
